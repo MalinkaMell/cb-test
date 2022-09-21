@@ -1,0 +1,106 @@
+:root {
+	--b-secondary: #2f7656;
+	--b-primary: #c94028;
+	--b-light: #f5f5f5;
+	--b-gray: #333432;
+	--b-dark: #0a0903;
+}
+
+/* global */
+
+body {
+	background-color: var(--b-light) !important;
+	scroll-behavior: smooth;
+}
+/* bg */
+.bg-primary {
+	background-color: var(--b-primary) !important;
+}
+.bg-secondary {
+	background-color: var(--b-secondary) !important;
+}
+.bg-light {
+	background-color: var(--b-light) !important;
+}
+.bg-dark {
+	background-color: var(--b-dark) !important;
+}
+.bg-info {
+	background-color: var(--b-gray) !important;
+}
+/* text */
+.text-primary {
+	color: var(--b-primary) !important;
+}
+
+.text-secondary {
+	color: var(--b-secondary) !important;
+}
+
+.text-light {
+	color: var(--b-light) !important;
+}
+
+.text-dark {
+	color: var(--b-dark) !important;
+}
+
+.text-info {
+	color: var(--b-gray) !important;
+}
+/* buttons */
+
+.btn-primary {
+	--bs-btn-color: var(--b-light);
+	--bs-btn-bg: var(--b-primary);
+	--bs-btn-border-color: var(--b-primary);
+	--bs-btn-hover-color: var(--b-primary);
+	--bs-btn-hover-bg: var(--b-light);
+	--bs-btn-hover-border-color: var(--b-primary);
+	--bs-btn-focus-shadow-rgb: none;
+	--bs-btn-active-color: var(--b-light);
+	--bs-btn-active-bg: var(--b-primary);
+	--bs-btn-active-border-color: var(--b-light);
+	--bs-btn-active-shadow: none;
+	--bs-btn-disabled-color: var(--b-light);
+	--bs-btn-disabled-bg: var(--b=gray);
+	--bs-btn-disabled-border-color: var(--b-gray);
+}
+
+.btn-primsecondaryary {
+	--bs-btn-color: var(--b-light);
+	--bs-btn-bg: var(--b-secondary);
+	--bs-btn-border-color: var(--b-secondary);
+	--bs-btn-hover-color: var(--b-secondary);
+	--bs-btn-hover-bg: var(--b-light);
+	--bs-btn-hover-border-color: var(--b-secondary);
+	--bs-btn-focus-shadow-rgb: none;
+	--bs-btn-active-color: var(--b-light);
+	--bs-btn-active-bg: var(--b-secondary);
+	--bs-btn-active-border-color: var(--b-light);
+	--bs-btn-active-shadow: none;
+	--bs-btn-disabled-color: var(--b-light);
+	--bs-btn-disabled-bg: var(--b=gray);
+	--bs-btn-disabled-border-color: var(--b-gray);
+}
+.btn {
+	padding: 0.5rem 1rem;
+}
+
+/* nav */
+
+.nav-item {
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+}
+.nav-item:hover {
+	color: var(--b-dark);
+	border-bottom-color: var(--b-primary);
+}
+
+#carousel .carousel-item {
+	max-height: 80vh;
+}
