@@ -11,6 +11,7 @@
 body {
 	background-color: var(--b-light) !important;
 	scroll-behavior: smooth;
+	overscroll-behavior: none;
 }
 /* bg */
 .bg-primary {
@@ -67,7 +68,7 @@ body {
 	--bs-btn-disabled-border-color: var(--b-gray);
 }
 
-.btn-primsecondaryary {
+.btn-secondary {
 	--bs-btn-color: var(--b-light);
 	--bs-btn-bg: var(--b-secondary);
 	--bs-btn-border-color: var(--b-secondary);
@@ -103,4 +104,26 @@ body {
 
 #carousel .carousel-item {
 	max-height: 80vh;
+}
+#carousel .carousel-item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/* headings */
+h1 {
+	font-size: 5rem;
+}
+.b-primary {
+	border-bottom: 6px solid var(--b-primary);
+	max-width: 75%;
+}
+.b-secondary {
+	border-bottom: 6px solid var(--b-secondary);
+	max-width: 75%;
 }
